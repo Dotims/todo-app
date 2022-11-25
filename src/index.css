@@ -11,26 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* variables */
-:root {
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-}
-
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,7 +21,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: hsl(212, 30%, 89%);
-  color: var(--clr-grey-1);
+  color: hsl(0, 0%, 0%);
   font-size: 1rem;
 }
 
@@ -52,7 +33,7 @@ body {
 .btn {
   display: inline-block;
   background: hsl(205, 78%, 60%);
-  color: var(--clr-white);
+  color: #fff;
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
   border-color: transparent;
@@ -72,7 +53,7 @@ body {
 }
 
 .item {
-  background: var(--clr-white);
+  background: #fff;
   display: flex;
   justify-content: space-between;
   max-width: 450px;
@@ -85,7 +66,7 @@ body {
 .item a {
   background: transparent;
   border-color: transparent;
-  color: hsl(205, 78%, 60%);
+  color: #ac0000;
   letter-spacing: var(--spacing);
   cursor: pointer;
 }
@@ -107,7 +88,7 @@ body {
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--clr-white);
+  background: #fff;
   display: inline-block;
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
@@ -116,11 +97,11 @@ body {
 
 .modal p {
   margin-bottom: 0;
-  color: rgb(151, 1, 1);
+  color: #0fb132;
 }
 
 .form {
-  background: var(--clr-white);
+  background: #fff;
   max-width: 450px;
   margin: 10vh auto;
   margin-bottom: 4rem;
@@ -145,7 +126,7 @@ body {
 .form button {
   display: inline-block;
   background: #222;
-  color: var(--clr-white);
+  color: #fff;
   border-color: transparent;
   margin-top: 1rem;
   letter-spacing: var(--spacing);
